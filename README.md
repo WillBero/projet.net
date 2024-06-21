@@ -1,4 +1,4 @@
-#Projet Socket client Serveur
+# Projet Socket client Serveur
 ## Cryptage
 Killian Douillet
 André Gomes Rodrigues

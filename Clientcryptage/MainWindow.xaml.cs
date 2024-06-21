@@ -1,4 +1,4 @@
-﻿using System.Net.Sockets;
+using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -12,10 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Clientcryptage
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+{ 
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -63,14 +60,12 @@ namespace Clientcryptage
 
                     EncryptedTextBlock.Text = encryptedText;
                 }
-            }
-            else
-            {
-
-
+                else { 
                 EncryptedTextBlock.Text = "Erreur dans la saisie du texte";
+                }
 
             }
+
         }
 
         private bool IsInputValid(string input)

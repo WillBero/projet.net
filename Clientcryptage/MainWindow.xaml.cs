@@ -17,8 +17,8 @@ namespace Clientcryptage
             InitializeComponent();
         }
 
-      
-       
+
+
 
         private void ClearTextBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -30,6 +30,9 @@ namespace Clientcryptage
                     MessageBox.Show("Veuillez entrer une chaîne de caractères.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
+
+                // Supprimer les espaces de la chaîne d'entrée
+                inputText = inputText.Replace(" ", "");
 
                 inputText = inputText.ToUpper();
 
@@ -65,10 +68,10 @@ namespace Clientcryptage
                 else
                 {
                     MessageBox.Show("Erreur dans la saisie du texte.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
-
                 }
             }
         }
+
 
         private bool IsInputValid(string input)
         {

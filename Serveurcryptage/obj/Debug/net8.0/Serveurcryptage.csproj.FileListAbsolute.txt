@@ -1,0 +1,14 @@
+D:\Socket1\Serveurcryptage\bin\Debug\net8.0\Serveurcryptage.exe
+D:\Socket1\Serveurcryptage\bin\Debug\net8.0\Serveurcryptage.deps.json
+D:\Socket1\Serveurcryptage\bin\Debug\net8.0\Serveurcryptage.runtimeconfig.json
+D:\Socket1\Serveurcryptage\bin\Debug\net8.0\Serveurcryptage.dll
+D:\Socket1\Serveurcryptage\bin\Debug\net8.0\Serveurcryptage.pdb
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.GeneratedMSBuildEditorConfig.editorconfig
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.AssemblyInfoInputs.cache
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.AssemblyInfo.cs
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.csproj.CoreCompileInputs.cache
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.dll
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\refint\Serveurcryptage.dll
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.pdb
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\Serveurcryptage.genruntimeconfig.cache
+D:\Socket1\Serveurcryptage\obj\Debug\net8.0\ref\Serveurcryptage.dll

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -40,10 +40,12 @@ class Program
         }
     }
 
+    //Procédure qui traitre la connexion du client
     static void Communication(object clientSocketObject)
     {
         Socket clientSocket = (Socket)clientSocketObject;
 
+        //Recuperation de l'adresse du client et du port
         IPEndPoint clientEndPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
         string clientAddress = clientEndPoint.Address.ToString();
         int clientPort = clientEndPoint.Port;
@@ -57,10 +59,10 @@ class Program
 
         Console.WriteLine($"[{DateTime.Now}] Requête de {clientAddress}:{clientPort} - Chaîne reçue : {receivedText}");
 
-
+        //Recuperation du texte crypté
         string response = ProcessRequest(receivedText);
         byte[] responseBytes = Encoding.ASCII.GetBytes(response);
-
+        //Conversion en Bytes pour l'envoie au client.
 
 
         Console.WriteLine(response);
@@ -73,7 +75,7 @@ class Program
     }
 
 
-
+    //Procédure qui traitre la chaine de caractère reçu pour définir le type de cryptage.
     static string ProcessRequest(string request)
     {
         // Split the input string based on '|'
@@ -101,6 +103,8 @@ class Program
         }
     }
 
+
+    // Méthode de chiffrement de Cesar
 
     static string Cesar(string input)
     {
@@ -201,6 +205,8 @@ class Program
         throw new ArgumentException("Lettre non trouvée dans la matrice Playfair");
     }
 
+
+    // Méthode de chiffrement Substituion
 
     static string Substitution(string input)
     {

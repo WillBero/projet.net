@@ -6,36 +6,37 @@
         xmlns:local="clr-namespace:Clientcryptage"
         mc:Ignorable="d"
         Title="PromeoCrypto " Height="450" Width="800">
-    <Grid Margin="5" Background="LightGray">
+    <Grid Background="LightBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Label Content="PromeoCrypto" HorizontalAlignment="Center" FontSize="20" FontFamily="Bahnschrift Light" Foreground="Black"  Margin="0,0,0,101"/>
         <!-- Zone de saisie de la chaîne claire -->
         <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5">
-            <Label Content="Saisir la chaîne à chiffrer :" HorizontalAlignment="Stretch"/>
+            <Label Content="Saisir la chaîne à chiffrer :" HorizontalAlignment="Stretch"  FontFamily="Bahnschrift Light"  FontSize="14"/>
             <Border BorderBrush="Black" BorderThickness="1" Background="White" >
 
-                <TextBox x:Name="ClearTextBox"  KeyDown="ClearTextBox_KeyDown" FontSize="14" HorizontalAlignment="Stretch" />
+                <TextBox x:Name="ClearTextBox"  KeyDown="ClearTextBox_KeyDown"  HorizontalAlignment="Stretch"  FontFamily="Bahnschrift Light" FontSize="14"/>
             </Border>
         </StackPanel>
 
         <!-- GroupBox pour méthode de chiffrement -->
-        <GroupBox Grid.Row="1" Header="Méthode de chiffrement" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5">
+        <GroupBox Grid.Row="1" Header="Méthode de chiffrement" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14"  >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <RadioButton x:Name="C" Content="Chiffrement de César" Margin="10,0" IsChecked="True"/>
-                <RadioButton x:Name="P" Content="Chiffrement de Playfar" Margin="10,0"/>
-                <RadioButton x:Name="S" Content="Chiffrement par substitution" Margin="10,0"/>
+                <RadioButton x:Name="C" Content="Code césar" Margin="10,0" IsChecked="True"  FontFamily="Bahnschrift Light" FontSize="14"/>
+                <RadioButton x:Name="P" Content="Playfar" Margin="10,0"  FontFamily="Bahnschrift Light" FontSize="14"/>
+                <RadioButton x:Name="S" Content="Substitution" Margin="10,0"  FontFamily="Bahnschrift Light" FontSize="14"/>
             </StackPanel>
         </GroupBox>
 
         <!-- Zone d'affichage de la chaîne chiffrée -->
         <StackPanel Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5">
-            <Label Content="Chaîne chiffrée :" HorizontalAlignment="Stretch"/>
+            <Label Content="Chaîne chiffrée :" HorizontalAlignment="Stretch"  FontFamily="Bahnschrift Light" FontSize="14"/>
             <Border BorderBrush="Black" BorderThickness="1" Background="White" >
-                <TextBlock x:Name="EncryptedTextBlock"  TextWrapping="Wrap" FontSize="14"/>
+                <TextBlock x:Name="EncryptedTextBlock"  TextWrapping="Wrap"  FontFamily="Bahnschrift Light" FontSize="14" />
             </Border>
         </StackPanel>
     </Grid>

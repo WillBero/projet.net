@@ -4,4 +4,4 @@ Killian Douillet
 André Gomes Rodrigues
 William Berhault
 
-*LP RGI 24 *
+*LP RGI 24*

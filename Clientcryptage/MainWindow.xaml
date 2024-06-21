@@ -27,7 +27,7 @@
         <GroupBox Grid.Row="1" Header="Méthode de chiffrement" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14"  >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <RadioButton x:Name="C" Content="Code césar" Margin="10,0" IsChecked="True"  FontFamily="Bahnschrift Light" FontSize="14"/>
-                <RadioButton x:Name="P" Content="Playfar" Margin="10,0"  FontFamily="Bahnschrift Light" FontSize="14"/>
+                <RadioButton x:Name="P" Content="Playfair" Margin="10,0"  FontFamily="Bahnschrift Light" FontSize="14"/>
                 <RadioButton x:Name="S" Content="Substitution" Margin="10,0"  FontFamily="Bahnschrift Light" FontSize="14"/>
             </StackPanel>
         </GroupBox>
